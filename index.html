@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos.css">
+    <meta name="keywords" content="e-commerce, outfit, prendas, conjuntos, argentina ">
+    <meta name="title" content="Iceshop - Inicio">
+    <meta name="lenguage" content="Spanish">
+    <meta name="city" content="Buenos Aires">
+    <meta name="country" content="Argentina">
+    <meta name="description" content="Pequeño e-commerce dirigido a un publico que busca vestir con un flow bestial">
+    <title>ICEShop</title> 
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+<!-- Intento de barra de busqueda -->
+                <div class="headerDiv container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-5">
+                    <form class="form-inline my-2">
+                        <input class="inputStyle mr-sm-8 " type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-4" type="submit">Search</button>
+                    </form>
+                </div>
+<!-- Intento de barra de busqueda -->  
+                <div class="headerDiv navDiv container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-7">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <h1><a class="navbar-brand" href="./index.html">ICEShop</a></h1>
+                    <!-- Toggler/collapsibe Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <!-- Navbar links -->
+                    <div class="navbarDiv collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Productos
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./pages/productos.html">Todos los productos</a>
+                                <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./pages/articles/remeras.html">Remeras</a>
+                            <a class="dropdown-item" href="./pages/articles/buzos.html">Buzos</a>
+                            <a class="dropdown-item" href="./pages/articles/joggers.html">Joggers</a>
+                            <a class="dropdown-item" href="./pages/articles/bermudas.html">Bermudas</a>
+                            <a class="dropdown-item" href="./pages/articles/conjuntos.html">Conjuntos</a>
+                            <a class="dropdown-item" href="./pages/articles/acesorios.html">Accesorios</a>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sizetable.html">Talles</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/faq.html">FAQ</a></li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./pages/contact.html">Contacto</a></li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./pages/about_us.html">Sobre Nosotros</a></li>
+                    </ul>
+                    </div>
+                </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+<!-- parte de un carrousel -->
+
+    <section id="demo" class="carousel slide w-100" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 carrouselSize" src="./img/clothes/buzo1.jpg" alt="Buzo levis negro"></div>
+            <div class="carousel-item">
+                <img class="d-block w-100 carrouselSize" src="./img/clothes/buzo2.jfif" alt="Buzo levis blanco y gris"></div>
+            <div class="carousel-item">
+                <img class="d-block w-100 carrouselSize" src="./img/clothes/buzo3.jfif" alt="Hoodie Negro"></div>
+            <div class="carousel-item">
+                <img class="d-block w-100 carrouselSize" src="./img/clothes/buzo4.jpg" alt="Hoodie hollister verde agua" ></div>
+            <button class="carousel-control-prev btn-dark buttonCarousel" type="button" data-target="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next btn btn-dark buttonCarousel" type="button" data-target="#demo" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+    </section>  
+
+<!-- parte de un carrousel -->
+        <section class="container divJoggers">
+            <div class="row">
+                <a class="d-flex justify-content-center col-sm-4" href="./pages/articles/buzos.html">
+                    <img src="./img/buzos.png" alt="Buzos"></a>
+                <a class="col-sm-4 d-flex justify-content-center" href="./pages/articles/remeras.html">
+                    <img src="./img/REMERAS.png" alt="Remeras"></a>
+                <a class="col-sm-4 d-flex justify-content-center" href="./pages/articles/bermudas.html">
+                    <img src="./img/BERMUDAS.png" alt="Bermudas"></a> <br>
+                <a class="col-sm-4 d-flex justify-content-center" href="./pages/articles/joggers.html">
+                    <img src="./img/joggers.png" alt="Joggers"></a>
+                <a class="col-sm-4 d-flex justify-content-center" href="./articles/conjuntos.html">
+                    <img src="./img/conjuntos.png" alt="Conjuntos"></a>
+                <a class="col-sm-4 d-flex justify-content-center" href="./pages/articles/acesorios.html">
+                    <img src="./img/ACCESORIOS.png" alt="Accesorios"></a> <br>
+            </div>
+        </section>
+        <section class="allProducts">
+            <a class="buttonAllProducts" href="./pages/productos.html">Todos los productos</a>
+        </section>
+        <section class="container-fluid">
+            <div class="row">
+                <article class="aboutUsIndex col-xs-12 col-sm-6">
+                    <h2 class="tituloAboutUsIndex">Nosotros</h2>
+                    <p class="parrafoAboutUsIndex">ICEShop se inicio como un proyecto entre 2 colegas en el 2000, inicialmente teniamos un establecimiento en Tigre - Buenos Aires. El proyecto fue creciendo y estamos complacidos de anunciarles que contamos con mas de 20 años en el mercado.</p>
+                </article>
+                <div class="col-xs-12 col-sm-6">
+                    <img class="aboutUsImagenSize" src="./img/local.jpg" alt="Local">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="divFootNavegacion col-sm-3">
+                <h3>Navegación</h3>
+                <nav>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="./pages/productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/sizetable.html">Tabla de talles</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/contact.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/about_us.html">Acerca de nosotros</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <section class="divFootPagos col-sm-3">
+                <h3>Medios de pago</h3>
+                <article>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                    <i class="fa-brands fa-bitcoin"></i> <br>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-ethereum"></i>
+                </article>
+            </section>
+            <section class="divFootRedes col-sm-3">
+                <h3 class="footerFontSizeRedes">Redes Sociales</h3>
+                <article>
+                    <a class="fa-brands fa-facebook-square" href="https://www.facebook.com/b.n.nocolas/" target="_blank"></a>
+                    <a class="fa-brands fa-instagram" href="https://www.instagram.com/ojjeda._/" target="_blank"></a>
+                    <a class="fa-brands fa-whatsapp" href="https://wa.me/qr/7DKI7LDWUYEKA1" target="_blank"></a> 
+                    <br>
+                </article>
+            </section>
+            <section class="footerDiv col-sm-3">
+                <h3 class="newsletterFont">Newsletter</h3>
+                <form class="newsletter" action="https://formspree.io/f/mlezorar" method="post">
+                <article class="formFooter form-group">
+                        <label for="mail"></label>
+                        <input class="inputStyle2" type="email" name="mail" id="mail">
+                        <input class="btn btn btn-outline-light" type="submit" value="Enviar"> <br>
+                </article>
+                <article class="formFooter form-group form-check">
+                    <input class="form-check-input" type="checkbox" name="checkbox-terminos" value="Aceptar terminos y condiciones" required>
+                        <label for="form-check-label">¿Acepta los terminos y condiciones?</label><br>
+                </article>
+                <article class="formFooter form-group form-check">
+                    <input class="form-check-input" type="checkbox" name="checkbox-news" value="Acepta newsletter">
+                        <label for="form-check-label">¿Desea recibir noticias semanalmente?</label>
+                </article>
+                </form>
+            </section>
+        </div>    
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/96375143e7.js" crossorigin="anonymous"></script>
+</body>
+</html>
