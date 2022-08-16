@@ -43,13 +43,9 @@ window.onload = function(){
 	const cardBoxTable = document.querySelector('.tablax')
 	let tableData = ''
 	tableData += '<tr><th class="textTable">ID</th><th class="textTable">Nombre</th><th class="textTable">Cantidad</th><th class="p-left textTable">Precio</th><th></th></tr>'
-	if(JSON.parse(localStorage.getItem('items'))[0] === null){
-		tableData += '<tr><td colspan="5">No se han encontrado articulos</td></tr>'
-	}else{
-		JSON.parse(localStorage.getItem('items')).map(data=>{
-            tableData += '<tr><th class="textTable">'+data.id+'</th><th class="textTable">'+data.nombre+'</th><th class="textTable">'+data.cantidad+'</th><th class="textTable">$'+data.precio+'</th><th> <a href="#" onclick=Delete(this);>Eliminar</a></th></tr>';
-        })
-    }
+	JSON.parse(localStorage.getItem('items')).map(data=>{
+        tableData += '<tr><th class="textTable">'+data.id+'</th><th class="textTable">'+data.nombre+'</th><th class="textTable">'+data.cantidad+'</th><th class="textTable">$'+data.precio+'</th><th> <a href="#" onclick=Delete(this);>Eliminar</a></th></tr>';
+    })
     cardBoxTable.innerHTML = tableData
 
 	//Calcular total de los productos
@@ -66,30 +62,36 @@ window.onload = function(){
 
 	//ButtonComprar que a su vez manda los datos de la compra a la api fake de mockApi
 	const btnComprar = document.getElementById("comprar")
+	const formulario = document.getElementById("formulario")
+
 	btnComprar.addEventListener("click", () =>{
-	function cargarCarrito (carrito){
-		fetch("https://62e871cf93938a545be60439.mockapi.io/buyHistory", {
-			method: "POST",
-			body: JSON.stringify(carrito),
+		formulario.onsubmit = (event) => validarFormulario(event);
+		function cargarCarrito (carrito){
+			fetch("https://62e871cf93938a545be60439.mockapi.io/buyHistory", {
+				method: "POST",
+				body: JSON.stringify(carrito),
 			headers: {
 				"Content-type": "application/json",
 			},
 		})
 		.then((response) => response.json())
 	}
-	let carrito = 0
-	const enviarCarrito = {
-		id: carrito + 1,
-		productos: JSON.parse(localStorage.getItem('items'))
-	}
-	cargarCarrito(enviarCarrito)
+	function validarFormulario(event){
 		Swal.fire({
 			icon: 'success',
 			title: 'Gracias por su compra!!',
 			text: 'Gracias por su compra, le llegara un email con su codigo de seguimiento'
 		})
+		event.preventDefault();
+		formulario.reset();
+	}
+	let carrito = 0
+	const enviarCarrito = {
+		id: carrito + 1,
+		productos: JSON.parse(localStorage.getItem('items')),
+	}
+	cargarCarrito(enviarCarrito)
 	})
-
 	//ButtonEliminar carrito entero 
 	const btnEliminar = document.getElementById("eliminar")
 	btnEliminar.addEventListener("click", () =>{

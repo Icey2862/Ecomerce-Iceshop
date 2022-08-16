@@ -67,16 +67,45 @@
     <main>
         <h1 class="d-flex justify-content-center">Carrito</h1>
         <br>
-        <div class="cartBox d-flex justify-content-center">
-            <div class="cart">
-                <table class="table tablax w-100"></table>
+        <div class="row">
+            <div class="cartBox d-flex justify-content-center col-md-6">
+                <div class="cart">
+                    <table class="table tablax"></table>
+                </div>
             </div>
+            <form id="formulario" class="col-md-6">
+                <h2 class="achedosTitleCart">Datos de contacto</h2>
+                <div class="form-row">
+                    <div class="form-group ">
+                        <label for="nombre">Nombre:</label>
+                            <input type="text" class="formSize form-control" name="Nombre" required placeholder="Escribe tu nombre"> 
+                    </div>
+                    <div class="form-group ">
+                        <label for="Apellido">Apellido:</label>
+                            <input type="text" class="formSize form-control" name="Apellido" required placeholder="Escribe tu apellido"> 
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="correo">Correo:</label>
+                            <input type="email" class="formSize form-control" name="correo" required placeholder="Escribe tu correo"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Telefono:</label>
+                            <input type="number" class="formSize form-control" name="telefono" required placeholder="Escribe tu telefono"> 
+                    </div>
+                </div>
+                <div>
+                    <label for="direccion">Direccion:</label>
+                    <input type="text" class="formSize form-control" name="direccion" required placeholder="Escriba su direccion">
+                </div>
         </div>
-        <div class="footCart container">
-            <h2 id="total"></h2>
-            <button id="eliminar" class="button btn btn-danger">Eliminar carrito</button>
-            <button id="comprar" class="button btn btn-success">Comprar</button>
-        </div>
+            <div class="footCart container">
+                <h2 id="total"></h2>
+                <button id="eliminar" class="button btn btn-danger">Eliminar carrito</button>
+                <button id="comprar" class="button btn btn-success">Comprar</button>
+            </div>
+        </form>
     </main>
 
     <footer>
