@@ -83,6 +83,12 @@ window.onload = function(){
 	//ButtonComprar que a su vez manda los datos de la compra a la api fake de mockApi
 	const btnComprar = document.getElementById("comprar")
 	const formulario = document.getElementById("formulario")
+	let nameInput = document.getElementById("nameInput")
+	let apellidoInput = document.getElementById("apellidoInput")
+	let correoInput = document.getElementById("emailInput")
+	let telefonoInput = document.getElementById("telefonoInput")
+	let direccionInput = document.getElementById("direccionInput")
+
 	btnComprar.addEventListener("click", () =>{
 		formulario.onsubmit = (event) => validarFormulario(event);
 		function cargarCarrito (carrito){
@@ -100,18 +106,22 @@ window.onload = function(){
 			icon: 'success',
 			title: 'Gracias por su compra!!',
 			text: 'Gracias por su compra, le llegara un email con su codigo de seguimiento'
-		})
+		})	
 		event.preventDefault();
 		formulario.reset();
+		cargarCarrito(enviarCarrito)
 	}
 	let carrito = 0
 	const enviarCarrito = {
 		id: carrito + 1,
 		productos: JSON.parse(localStorage.getItem('items')),
 		totalCompra: total,
-		cupon: cupon
+		cupon: cupon,
+		nombre: nameInput.value + " " + apellidoInput.value,
+		correo: correoInput.value,
+		telefono: telefonoInput.value,
+		direccion: direccionInput.value,
 	}
-	cargarCarrito(enviarCarrito)
 	})
 	//ButtonEliminar carrito entero 
 	const btnEliminar = document.getElementById("eliminar")
