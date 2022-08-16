@@ -215,7 +215,7 @@ header{
 .primerArticle{
     grid-area: primerArticle;   
     text-align: center;
-    background: rgba( 0, 0, 0, 0.7 );
+    background: rgba(146, 141, 141, 0.7);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0px );
     -webkit-backdrop-filter: blur( 0px );
@@ -224,6 +224,10 @@ header{
     h3{
         text-align: center;
         text-decoration: none;
+        color:#000
+    }
+    h4{
+        color: #000;
     }
     img{
         width: 70%;
@@ -234,7 +238,7 @@ header{
 .segundoArticle{
     grid-area: segundoArticle;
     text-align: center;
-    background: rgba( 0, 0, 0, 0.7 );
+    background: rgba(146, 141, 141, 0.7);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0px );
     -webkit-backdrop-filter: blur( 0px );
@@ -242,7 +246,10 @@ header{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     h3{
         text-align: center;
-        color: white;
+        color: #000;
+    }
+    h4{
+        color: #000;
     }
     img{
         width: 70%;
@@ -253,7 +260,7 @@ header{
 .tercerArticle{
     grid-area: tercerArticle;
     text-align: center;
-    background: rgba( 0, 0, 0, 0.7 );
+    background: rgba(146, 141, 141, 0.7);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0px );
     -webkit-backdrop-filter: blur( 0px );
@@ -261,6 +268,10 @@ header{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     h3{
         text-align: center;
+        color: #000;
+    }
+    h4{
+        color: #000;
     }
     img{
         width: 70%;
@@ -271,7 +282,7 @@ header{
 .cuartoArticle{
     grid-area: cuartoArticle;
     text-align: center;
-    background: rgba( 0, 0, 0, 0.7 );
+    background: rgba(146, 141, 141, 0.7);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0px );
     -webkit-backdrop-filter: blur( 0px );
@@ -279,6 +290,10 @@ header{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     h3{
         text-align: center;
+        color: #000;
+    }
+    h4{
+        color: #000;
     }
     img{
         width: 70%;
@@ -289,7 +304,7 @@ header{
 .quintoArticle{
     grid-area: quintoArticle;
     text-align: center;
-    background: rgba( 0, 0, 0, 0.7 );
+    background: rgba(146, 141, 141, 0.7);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0px );
     -webkit-backdrop-filter: blur( 0px );
@@ -297,6 +312,10 @@ header{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     h3{
         text-align: center;
+        color: #000;
+    }
+    h4{
+        color: #000;
     }
     img{
         width: 70%;
@@ -307,7 +326,7 @@ header{
 .sextoArticle{
     grid-area: sextoArticle;
     text-align: center;
-    background: rgba( 0, 0, 0, 0.7 );
+    background: rgba(146, 141, 141, 0.7);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0px );
     -webkit-backdrop-filter: blur( 0px );
@@ -315,6 +334,10 @@ header{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     h3{
         text-align: center;
+        color: #000;
+    }
+    h4{
+        color: #000;
     }
     img{ 
         width: 70%;
@@ -325,7 +348,7 @@ header{
 .septimoArticle{
     grid-area: septimoArticle;
     text-align: center;
-    background: rgba( 0, 0, 0, 0.7 );
+    background: rgba(146, 141, 141, 0.7);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0px );
     -webkit-backdrop-filter: blur( 0px );
@@ -333,6 +356,10 @@ header{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     h3{
         text-align: center;
+        color: #000;
+    }
+    h4{
+        color: #000;
     }
     img{
         width: 70%;
@@ -343,7 +370,7 @@ header{
 .octavoArticle{
     grid-area: octavoArticle;
     text-align: center;
-    background: rgba( 0, 0, 0, 0.7 );
+    background: rgba(146, 141, 141, 0.7);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0px );
     -webkit-backdrop-filter: blur( 0px );
@@ -351,6 +378,10 @@ header{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     h3{
         text-align: center;
+        color: #000;
+    }
+    h4{
+        color: #000;
     }
     img{
         width: 70%;
@@ -361,7 +392,7 @@ header{
 .novenoArticle{
     grid-area: novenoArticle;
     text-align: center;
-    background: rgba( 0, 0, 0, 0.7 );
+    background: rgba(146, 141, 141, 0.7);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0px );
     -webkit-backdrop-filter: blur( 0px );
@@ -369,6 +400,10 @@ header{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     h3{
         text-align: center;
+        color: #000;
+    }
+    h4{
+        color: #000;
     }
     img{
         width: 70%;
@@ -379,7 +414,7 @@ header{
 .decimoArticle{
     grid-area: decimoArticle;
     text-align: center;
-    background: rgba( 0, 0, 0, 0.7 );
+    background: rgba(146, 141, 141, 0.7);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0px );
     -webkit-backdrop-filter: blur( 0px );
@@ -388,6 +423,10 @@ header{
     margin-bottom: 100px;
     h3{
         text-align: center;
+        color: #000;
+    }
+    h4{
+        color: #000;
     }
     img{
         width: 70%;
@@ -396,6 +435,43 @@ header{
     }
 }
 /* Fin productos CSS */
+
+
+/* CARRITO */
+.cartBox{
+    min-height: 300px;
+}
+
+.footCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.textTable{
+    text-align: center;
+}
+
+.iconShopping{
+    padding-left: 10px;
+	z-index: 1;
+	position: relative;
+	font-size: 1.8rem;
+    color: white;
+    a{
+        color:white
+    }
+    p{
+    position: absolute;
+	top: -5px;
+	right: -12px;
+	font-size: 0.69rem;
+	background-color: white;
+	padding: 5px 5px;
+    color: #000;
+	border-radius: 50%;
+    }
+}
 
 /* Articles */
 .divArticleBuzo{

@@ -219,7 +219,7 @@ header .inputStyle {
 .primerArticle {
   grid-area: primerArticle;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(146, 141, 141, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
@@ -229,6 +229,10 @@ header .inputStyle {
 .primerArticle h3 {
   text-align: center;
   text-decoration: none;
+  color: #000;
+}
+.primerArticle h4 {
+  color: #000;
 }
 .primerArticle img {
   width: 70%;
@@ -239,7 +243,7 @@ header .inputStyle {
 .segundoArticle {
   grid-area: segundoArticle;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(146, 141, 141, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
@@ -248,7 +252,10 @@ header .inputStyle {
 }
 .segundoArticle h3 {
   text-align: center;
-  color: white;
+  color: #000;
+}
+.segundoArticle h4 {
+  color: #000;
 }
 .segundoArticle img {
   width: 70%;
@@ -259,7 +266,7 @@ header .inputStyle {
 .tercerArticle {
   grid-area: tercerArticle;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(146, 141, 141, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
@@ -268,6 +275,10 @@ header .inputStyle {
 }
 .tercerArticle h3 {
   text-align: center;
+  color: #000;
+}
+.tercerArticle h4 {
+  color: #000;
 }
 .tercerArticle img {
   width: 70%;
@@ -278,7 +289,7 @@ header .inputStyle {
 .cuartoArticle {
   grid-area: cuartoArticle;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(146, 141, 141, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
@@ -287,6 +298,10 @@ header .inputStyle {
 }
 .cuartoArticle h3 {
   text-align: center;
+  color: #000;
+}
+.cuartoArticle h4 {
+  color: #000;
 }
 .cuartoArticle img {
   width: 70%;
@@ -297,7 +312,7 @@ header .inputStyle {
 .quintoArticle {
   grid-area: quintoArticle;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(146, 141, 141, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
@@ -306,6 +321,10 @@ header .inputStyle {
 }
 .quintoArticle h3 {
   text-align: center;
+  color: #000;
+}
+.quintoArticle h4 {
+  color: #000;
 }
 .quintoArticle img {
   width: 70%;
@@ -316,7 +335,7 @@ header .inputStyle {
 .sextoArticle {
   grid-area: sextoArticle;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(146, 141, 141, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
@@ -325,6 +344,10 @@ header .inputStyle {
 }
 .sextoArticle h3 {
   text-align: center;
+  color: #000;
+}
+.sextoArticle h4 {
+  color: #000;
 }
 .sextoArticle img {
   width: 70%;
@@ -335,7 +358,7 @@ header .inputStyle {
 .septimoArticle {
   grid-area: septimoArticle;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(146, 141, 141, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
@@ -344,6 +367,10 @@ header .inputStyle {
 }
 .septimoArticle h3 {
   text-align: center;
+  color: #000;
+}
+.septimoArticle h4 {
+  color: #000;
 }
 .septimoArticle img {
   width: 70%;
@@ -354,7 +381,7 @@ header .inputStyle {
 .octavoArticle {
   grid-area: octavoArticle;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(146, 141, 141, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
@@ -363,6 +390,10 @@ header .inputStyle {
 }
 .octavoArticle h3 {
   text-align: center;
+  color: #000;
+}
+.octavoArticle h4 {
+  color: #000;
 }
 .octavoArticle img {
   width: 70%;
@@ -373,7 +404,7 @@ header .inputStyle {
 .novenoArticle {
   grid-area: novenoArticle;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(146, 141, 141, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
@@ -382,6 +413,10 @@ header .inputStyle {
 }
 .novenoArticle h3 {
   text-align: center;
+  color: #000;
+}
+.novenoArticle h4 {
+  color: #000;
 }
 .novenoArticle img {
   width: 70%;
@@ -392,7 +427,7 @@ header .inputStyle {
 .decimoArticle {
   grid-area: decimoArticle;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(146, 141, 141, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
@@ -402,6 +437,10 @@ header .inputStyle {
 }
 .decimoArticle h3 {
   text-align: center;
+  color: #000;
+}
+.decimoArticle h4 {
+  color: #000;
 }
 .decimoArticle img {
   width: 70%;
@@ -410,6 +449,42 @@ header .inputStyle {
 }
 
 /* Fin productos CSS */
+/* CARRITO */
+.cartBox {
+  min-height: 300px;
+}
+
+.footCart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.textTable {
+  text-align: center;
+}
+
+.iconShopping {
+  padding-left: 10px;
+  z-index: 1;
+  position: relative;
+  font-size: 1.8rem;
+  color: white;
+}
+.iconShopping a {
+  color: white;
+}
+.iconShopping p {
+  position: absolute;
+  top: -5px;
+  right: -12px;
+  font-size: 0.69rem;
+  background-color: white;
+  padding: 5px 5px;
+  color: #000;
+  border-radius: 50%;
+}
+
 /* Articles */
 .divArticleBuzo {
   display: flex;

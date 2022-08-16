@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos.css">
-    <meta name="keywords" content="e-commerce, outfit, prendas, conjuntos, argentina ">
-    <meta name="title" content="Iceshop - faq">
-    <meta name="lenguage" content="Spanish">
-    <meta name="city" content="Buenos Aires">
-    <meta name="country" content="Argentina">
-    <meta name="description" content="Espacio dirigido a responder y brindar preguntas frecuentes que nuestros clientes nos hacen.">
-    <title>¿Como comprar?</title>
+    <title>Carrito</title>
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
 </head>
 <body>
@@ -61,7 +55,7 @@
                             <a class="nav-link" href="./about_us.html">Sobre Nosotros</a></li>
                         <li class="nav-item iconShopping">
                             <p>0</p>
-                            <a href="./carrito.html"><i class="fa fa-shopping-cart"></i></a>
+                            <i class="fa fa-shopping-cart"></i>
                         </li>
                     </ul>
                     </div>
@@ -71,40 +65,18 @@
         </div>
     </header>
     <main>
-        <section class="divFaq container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                    <h2>Preguntas Frecuentes</h2>
-                    <article>
-                        <h3>¿Como comprar?</h3>
-                        <p>Para comprar en la pagina simplemente debes seleccionar un producto, este <br>
-                        sera enviado al carrito donde podras pasar a la pestaña de pagos y envios</p>
-                    </article>
-                    <article>
-                        <h3>¿Que medios de pago aceptan?</h3>
-                        <p>Aceptamos Paypal, Visa, Mastercard, bitcoin, entre otros...</p>
-                    </article>
-                    <article>
-                        <h3>¿Como gestionan los envios?</h3>
-                        <p>Los envios se hacen por medio del correo local, a la hora de pagar las prendas podra gestionar el costo</p>
-                    </article>
-                    <article>
-                        <h3>¿Ofrecen algun tipo de pack mayorista para revendedores?</h3>
-                        <p>En caso de ser un revendedor o free lancer, te invito a visitar la <a href="contact.html">siguiente pagina</a> <br>
-                        donde podras ponerte en contacto con nosotros para gestionar tu pedido </p>
-                    </article>
-                    <article>
-                        <h3>¿Se puede retirar el pedido en el local?</h3>
-                        <p>Si!! Atendemos de 9 a 13hs y de 15 a 20hs en caleta falsa123 - Rio Negro</p>
-                    </article>
-                </div>
-                <div class="col-xs-12 col-sm-12  col-md-12 col-lg-6">
-                    <aside class="googleMaps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6040.507079679616!2d-65.069811!3d-40.800422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95fa3317b05deed3%3A0x79f5230702da4797!2sCaleta%20Falsa%20123%2C%20Las%20Grutas%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses!2sar!4v1655071439290!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </aside>
-                </div>
+        <h1 class="d-flex justify-content-center">Carrito</h1>
+        <br>
+        <div class="cartBox d-flex justify-content-center">
+            <div class="cart">
+                <table class="table tablax w-100"></table>
             </div>
-        </section>
+        </div>
+        <div class="footCart container">
+            <h2 id="total"></h2>
+            <button id="eliminar" class="button btn btn-danger">Eliminar carrito</button>
+            <button id="comprar" class="button btn btn-success">Comprar</button>
+        </div>
     </main>
 
     <footer>
@@ -163,10 +135,24 @@
         </div>    
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/96375143e7.js" crossorigin="anonymous"></script>
     <script src="../app.js"></script>
+    <script>
+        function Delete(e){
+			let items = [];
+			JSON.parse(localStorage.getItem('items')).map(data=>{
+				if(data.id != e.parentElement.parentElement.children[0].textContent){
+					items.push(data);
+				}
+			});
+			localStorage.setItem('items',JSON.stringify(items));
+			window.location.reload();
+		};
+    </script>
 </body>
 </html>
