@@ -47,7 +47,7 @@ window.onload = function(){
         tableData += '<tr><th class="textTable">'+data.id+'</th><th class="textTable">'+data.nombre+'</th><th class="textTable">'+data.cantidad+'</th><th class="textTable">$'+data.precio+'</th><th> <a href="#" onclick=Delete(this);>Eliminar</a></th></tr>';
     })
     cardBoxTable.innerHTML = tableData
-
+	
 	//Calcular total de los productos
 	const totalSpace = document.getElementById("total")
 	let total = 0
@@ -60,10 +60,29 @@ window.onload = function(){
 	})
 	totalSpace.innerText= "El total es de: $"+ total
 
+	//Codigo descuento
+	const codigoDescuento = "coderM4N"
+	const cuponInput = document.getElementById("cupon")
+	const btnAplicar = document.getElementById("aplicarCupon")
+	let cupon = false
+	btnAplicar.addEventListener("click", ()=>{
+		if(cuponInput.value === codigoDescuento){
+			totalUno = total * 25 / 100
+			total -= totalUno
+			cupon = true
+			totalSpace.innerText= "El total es de: $"+ total
+		}else {
+			Swal.fire({
+				icon: 'error',
+				title: 'Codigo invalido!!',
+				text: 'El codigo ingresado no es valido'
+			})
+		}
+	})
+
 	//ButtonComprar que a su vez manda los datos de la compra a la api fake de mockApi
 	const btnComprar = document.getElementById("comprar")
 	const formulario = document.getElementById("formulario")
-
 	btnComprar.addEventListener("click", () =>{
 		formulario.onsubmit = (event) => validarFormulario(event);
 		function cargarCarrito (carrito){
@@ -89,6 +108,8 @@ window.onload = function(){
 	const enviarCarrito = {
 		id: carrito + 1,
 		productos: JSON.parse(localStorage.getItem('items')),
+		totalCompra: total,
+		cupon: cupon
 	}
 	cargarCarrito(enviarCarrito)
 	})

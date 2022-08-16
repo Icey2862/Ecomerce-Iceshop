@@ -440,6 +440,7 @@ header{
 /* CARRITO */
 .cartBox{
     min-height: 300px;
+    max-width: 1100px;
     margin-top: 40px;
     margin-bottom: 70px;
 }
@@ -448,12 +449,44 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    .buttonEl{
+        width: 80px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttonCo{
+        margin-left: 10px;
+        width: 80px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.cupon{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    padding-left: 80px;
+    .cuponText{
+        padding-bottom: 40px;
+        
+    }
 }
 
 .textTable{
     text-align: center;
 }
 
+.formulariox{
+    display: flex;
+}
 .iconShopping{
     padding-left: 10px;
 	z-index: 1;
@@ -477,6 +510,7 @@ header{
 
 .achedosTitleCart{
     margin-bottom: 30px;
+    text-align: center;
 }
 
 /* Articles */

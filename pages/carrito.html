@@ -73,39 +73,52 @@
                     <table class="table tablax"></table>
                 </div>
             </div>
-            <form id="formulario" class="col-md-6">
-                <h2 class="achedosTitleCart">Datos de contacto</h2>
-                <div class="form-row">
-                    <div class="form-group ">
-                        <label for="nombre">Nombre:</label>
-                            <input type="text" class="formSize form-control" name="Nombre" required placeholder="Escribe tu nombre"> 
-                    </div>
-                    <div class="form-group ">
-                        <label for="Apellido">Apellido:</label>
-                            <input type="text" class="formSize form-control" name="Apellido" required placeholder="Escribe tu apellido"> 
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="correo">Correo:</label>
-                            <input type="email" class="formSize form-control" name="correo" required placeholder="Escribe tu correo"> 
-                    </div>
-                    <div class="form-group">
-                        <label for="telefono">Telefono:</label>
-                            <input type="number" class="formSize form-control" name="telefono" required placeholder="Escribe tu telefono"> 
-                    </div>
-                </div>
-                <div>
-                    <label for="direccion">Direccion:</label>
-                    <input type="text" class="formSize form-control" name="direccion" required placeholder="Escriba su direccion">
-                </div>
-        </div>
-            <div class="footCart container">
+            <div class="cupon">
+                <div class="cuponText">
+                    <h3>Aprovecha esta oportunidad!!</h3>
+                    <p> Use nuestro cupon de descuento coderM4N para un descuento del 25% de tu compra</p>
+                </div>  
                 <h2 id="total"></h2>
-                <button id="eliminar" class="button btn btn-danger">Eliminar carrito</button>
-                <button id="comprar" class="button btn btn-success">Comprar</button>
+                <label for="CodigoDescuento">Cupon de descuento:</label>
+                <input type="text" id="cupon" class="formsize form-control" name="cupon" placeholder="ingrese el cupon">
+                <button id="aplicarCupon" class="btn btn-primary d-flex mt-2">aplicar</button>
             </div>
-        </form>
+
+            <div class="container">
+                <h2 class="achedosTitleCart">Datos de contacto</h2>
+                <form id="formulario" class="formulariox col-md-12">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                                <input type="text" class="formSize form-control" name="Nombre" required placeholder="Escribe tu nombre"> 
+                        </div>
+                        <div class="form-group ">
+                            <label for="Apellido">Apellido:</label>
+                                <input type="text" class="formSize form-control" name="Apellido" required placeholder="Escribe tu apellido"> 
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="correo">Correo:</label>
+                                <input type="email" class="formSize form-control" name="correo" required placeholder="Escribe tu correo"> 
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Telefono:</label>
+                            <input type="number" class="formSize form-control" name="telefono" required placeholder="Escribe tu telefono"> 
+                        </div>
+                    </div>
+                    <div class="w-50">
+                        <label for="direccion">Direccion:</label>
+                        <input type="text" class="formSize form-control" name="direccion" required placeholder="Escriba su direccion">
+                    </div>
+                    <div class="footCart">
+                        <button id="eliminar" class="buttonEl btn btn-danger">Vaciar carrito</button>
+                        <button id="comprar" class="buttonCo btn btn-success">Comprar</button>
+                    </div>
+                </div>
+            </form>
+
+            </div>
     </main>
 
     <footer>
